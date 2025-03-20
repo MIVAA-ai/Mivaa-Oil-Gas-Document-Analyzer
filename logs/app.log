@@ -1,0 +1,145 @@
+2025-03-19 17:18:52,194 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-19 17:18:53,172 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-19 17:21:43,499 - INFO - Starting Gradio UI...
+2025-03-19 17:21:43,924 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-19 17:21:43,962 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-19 17:21:44,084 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-19 17:21:44,972 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-19 17:23:42,180 - INFO - File uploaded: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-19 17:23:42,181 - INFO - File successfully read: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-19 17:23:57,643 - WARNING - No file uploaded.
+2025-03-19 19:52:53,615 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-19 19:58:19,972 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-19 19:58:20,534 - INFO - Starting Gradio UI...
+2025-03-19 19:58:20,958 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-19 19:58:20,975 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-19 19:58:21,933 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-19 19:58:47,228 - INFO - File successfully read: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-19 19:58:47,228 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-19 19:58:50,517 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 19:58:50,640 - INFO - Classification result: The document you provided appears to contain technical information related to geophysical services, specifically focusing on synthetic seismograms, velocity logs, and well schematics. Given the content, which includes details about well depth, geophone positions, and velocity measurements, the most appropriate category for this document is:
+
+**Well Reports & Logs**
+2025-03-19 19:58:54,651 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 19:58:54,663 - ERROR - LLM returned an invalid JSON format.
+2025-03-19 19:58:56,181 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 19:58:56,182 - INFO - Generated Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
+2025-03-19 19:58:56,183 - INFO - Results - Classification: The document you provided appears to contain technical information related to geophysical services, specifically focusing on synthetic seismograms, velocity logs, and well schematics. Given the content, which includes details about well depth, geophone positions, and velocity measurements, the most appropriate category for this document is:
+
+**Well Reports & Logs**, Entities: Error: Unable to parse LLM response., Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
+2025-03-19 20:00:23,170 - WARNING - No file uploaded.
+2025-03-19 20:00:29,877 - INFO - File successfully read: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-19 20:00:29,877 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-19 20:00:31,928 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 20:00:31,929 - INFO - Classification result: The document you provided appears to contain technical information related to geophysical services, specifically focusing on synthetic seismograms, velocity logs, and well schematics. Given the content, which includes details about well depth, geophone positions, and velocity measurements, the most appropriate category for this document is:
+
+**Well Reports & Logs**
+2025-03-19 20:00:36,369 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 20:00:36,370 - ERROR - LLM returned an invalid JSON format.
+2025-03-19 20:00:37,631 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 20:00:37,632 - INFO - Generated Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
+2025-03-19 20:00:37,633 - INFO - Results - Classification: The document you provided appears to contain technical information related to geophysical services, specifically focusing on synthetic seismograms, velocity logs, and well schematics. Given the content, which includes details about well depth, geophone positions, and velocity measurements, the most appropriate category for this document is:
+
+**Well Reports & Logs**, Entities: Error: Unable to parse LLM response., Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
+2025-03-19 20:03:02,705 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-19 20:03:03,273 - INFO - Starting Gradio UI...
+2025-03-19 20:03:03,728 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-19 20:03:03,772 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-19 20:03:04,613 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-19 20:03:26,292 - INFO - File successfully read: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-19 20:03:26,293 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-19 20:03:28,523 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 20:03:28,537 - INFO - Classification result: The document you provided appears to contain technical information related to geophysical services, specifically focusing on synthetic seismograms, velocity logs, and well schematics. Given the content, which includes details about well depth, geophone positions, and velocity measurements, the most appropriate category for this document is:
+
+**Well Reports & Logs**
+2025-03-19 20:03:30,675 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 20:03:30,678 - INFO - Extracted Entities: Cunucu U.K. Limited, 211/19M25/D7, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited, 211/19M25/U7, 211/19-12907, 211/19-MZS/01, 211/19n25/07
+2025-03-19 20:03:32,665 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 20:03:32,665 - INFO - Generated Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
+2025-03-19 20:03:32,665 - INFO - Results - Classification: The document you provided appears to contain technical information related to geophysical services, specifically focusing on synthetic seismograms, velocity logs, and well schematics. Given the content, which includes details about well depth, geophone positions, and velocity measurements, the most appropriate category for this document is:
+
+**Well Reports & Logs**, Entities: Cunucu U.K. Limited, 211/19M25/D7, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited, 211/19M25/U7, 211/19-12907, 211/19-MZS/01, 211/19n25/07, Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
+2025-03-19 20:06:28,781 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-19 20:06:29,344 - INFO - Starting Gradio UI...
+2025-03-19 20:06:29,855 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-19 20:06:29,874 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-19 20:06:30,922 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-19 20:06:35,641 - INFO - File successfully read: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-19 20:06:35,641 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-19 20:06:37,971 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 20:06:37,986 - INFO - Classification result: The document you provided appears to contain technical information related to geophysical services, specifically focusing on synthetic seismograms, velocity logs, and well schematics. Given the content, which includes details about well depth, geophone positions, and velocity measurements, the most appropriate category for this document is:
+
+**Well Reports & Logs**
+2025-03-19 20:06:41,114 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 20:06:41,116 - INFO - Extracted Entities:
+Well Names: 211/19M25/D7, 211/19M25/U7, 211/19-MZS/01, Ell/19412907, Ell/19n25/07  
+Field Names: None  
+Reservoirs: None  
+Companies: CUNUCU U.K. LIMITED, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited, CONUCD U.K. LIMITED  
+Regulatory Bodies: None  
+Seismic Surveys: None  
+Drilling Rigs & Platforms: None
+2025-03-19 20:06:42,395 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-19 20:06:42,401 - INFO - Generated Summary: The document is a report from Conduc U.K. Limited detailing synthetic seismogram data and velocity log calibration for a geophysical survey conducted by Spectrum Geophysical Services, including measurements and computations related to well depth and geophone positioning.
+2025-03-19 20:06:42,401 - INFO - Results - Classification: The document you provided appears to contain technical information related to geophysical services, specifically focusing on synthetic seismograms, velocity logs, and well schematics. Given the content, which includes details about well depth, geophone positions, and velocity measurements, the most appropriate category for this document is:
+
+**Well Reports & Logs**, Entities: Well Names: 211/19M25/D7, 211/19M25/U7, 211/19-MZS/01, Ell/19412907, Ell/19n25/07  
+Field Names: None  
+Reservoirs: None  
+Companies: CUNUCU U.K. LIMITED, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited, CONUCD U.K. LIMITED  
+Regulatory Bodies: None  
+Seismic Surveys: None  
+Drilling Rigs & Platforms: None, Summary: The document is a report from Conduc U.K. Limited detailing synthetic seismogram data and velocity log calibration for a geophysical survey conducted by Spectrum Geophysical Services, including measurements and computations related to well depth and geophone positioning.
+2025-03-20 10:15:16,803 - INFO - Starting Gradio UI...
+2025-03-20 10:15:17,468 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 10:15:17,511 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 10:15:18,202 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 10:17:49,073 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt (0.01MB)
+2025-03-20 10:17:49,075 - INFO - File successfully read: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-20 10:17:49,075 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-20 10:17:51,160 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 10:17:51,178 - INFO - Detected Category: Synthetic Seismogram Report
+2025-03-20 10:17:53,336 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 10:17:53,337 - INFO - Extracted Entities:
+Company: Conduc U.K. Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19M25/D7, 211/19M25/U7, 211/19-MZS/01  
+Equipment: Geophone, Velocity Log  
+Location: 36 Goldsworth Road, Woking, Surrey GU21 1L0, England  
+Measurement: True vertical depth, Measured depth, Water depth, Source depth  
+Reference Level: KB/RT, AMSL  
+Data Type: Synthetic Seismogram, Velocity Log
+2025-03-20 10:17:54,596 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 10:17:54,598 - INFO - Generated Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
+2025-03-20 10:17:54,598 - INFO - Results - Classification: Synthetic Seismogram Report, Entities: Company: Conduc U.K. Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19M25/D7, 211/19M25/U7, 211/19-MZS/01  
+Equipment: Geophone, Velocity Log  
+Location: 36 Goldsworth Road, Woking, Surrey GU21 1L0, England  
+Measurement: True vertical depth, Measured depth, Water depth, Source depth  
+Reference Level: KB/RT, AMSL  
+Data Type: Synthetic Seismogram, Velocity Log, Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
+2025-03-20 10:21:23,993 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 10:21:24,606 - INFO - Starting Gradio UI...
+2025-03-20 10:21:25,068 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 10:21:25,107 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 10:21:26,033 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 10:21:54,215 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt (0.01MB)
+2025-03-20 10:21:54,216 - INFO - File successfully read: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-20 10:21:54,216 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\44f30dd16bf2b972e904fa9873553235247eb654301dd10d1dc6ee09a16b05ee\content.txt
+2025-03-20 10:21:55,285 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 10:21:55,298 - INFO - Detected Category: Synthetic Seismogram Report
+2025-03-20 10:21:57,154 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 10:21:57,159 - INFO - Extracted Entities:
+Company: Conduc U.K. Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19M25/D7, 211/19M25/U7, 211/19-MZS/01  
+Equipment: Geophone, Velocity Log  
+Location: 36 Goldsworth Road, Woking, Surrey GU21 1L0, England  
+Measurement: True vertical depth, Measured depth, Water depth, Source depth  
+Reference Level: KB/RT, AMSL, MSL
+2025-03-20 10:22:02,013 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 10:22:02,016 - INFO - Generated Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
+2025-03-20 10:22:02,016 - INFO - Results - Classification: Synthetic Seismogram Report, Entities: Company: Conduc U.K. Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19M25/D7, 211/19M25/U7, 211/19-MZS/01  
+Equipment: Geophone, Velocity Log  
+Location: 36 Goldsworth Road, Woking, Surrey GU21 1L0, England  
+Measurement: True vertical depth, Measured depth, Water depth, Source depth  
+Reference Level: KB/RT, AMSL, MSL, Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
