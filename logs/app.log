@@ -143,3 +143,595 @@ Equipment: Geophone, Velocity Log
 Location: 36 Goldsworth Road, Woking, Surrey GU21 1L0, England  
 Measurement: True vertical depth, Measured depth, Water depth, Source depth  
 Reference Level: KB/RT, AMSL, MSL, Summary: The document is a synthetic seismogram report detailing velocity log calibration and survey data for Conduc U.K. Limited, including measurements and computations related to geophone positioning and travel times in a marine well context.
+2025-03-20 11:13:45,905 - INFO - Starting Gradio UI...
+2025-03-20 11:13:46,416 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 11:13:46,439 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 11:13:47,282 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 11:13:55,085 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\10330051d5f9dc1d965bdb22ac08b644aecd3d7acae310946a110e05efc16492\content.txt (0.01MB)
+2025-03-20 11:13:55,085 - INFO - File successfully read: C:\Users\swapn\AppData\Local\Temp\gradio\10330051d5f9dc1d965bdb22ac08b644aecd3d7acae310946a110e05efc16492\content.txt
+2025-03-20 11:13:55,086 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\10330051d5f9dc1d965bdb22ac08b644aecd3d7acae310946a110e05efc16492\content.txt
+2025-03-20 11:13:57,374 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 11:13:57,388 - INFO - Detected Category: Synthetic Seismogram Report
+2025-03-20 11:13:59,791 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 11:13:59,792 - INFO - Extracted Entities:
+Company: Conduc U.K. Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19M25/D7, 211/19M25/U7, 211/19-MZS/01  
+Equipment: Geophone, Velocity Log  
+Location: 36 Goldsworth Road, Woking, Surrey GU21 1L0, England  
+Measurement: True vertical depth, Measured depth, Water depth, Source depth  
+Reference Level: KB/RT, AMSL  
+Data Type: Synthetic Seismogram, Velocity Log
+2025-03-20 11:14:04,827 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 11:14:04,842 - INFO - Generated Summary: The document is a report from Conduc U.K. Limited detailing synthetic seismogram data and velocity log calibration for a geophysical survey conducted by Spectrum Geophysical Services, including measurements and computations related to well depth and geophone positioning.
+2025-03-20 11:14:04,844 - INFO - Results - Classification: Synthetic Seismogram Report, Entities: Company: Conduc U.K. Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19M25/D7, 211/19M25/U7, 211/19-MZS/01  
+Equipment: Geophone, Velocity Log  
+Location: 36 Goldsworth Road, Woking, Surrey GU21 1L0, England  
+Measurement: True vertical depth, Measured depth, Water depth, Source depth  
+Reference Level: KB/RT, AMSL  
+Data Type: Synthetic Seismogram, Velocity Log, Summary: The document is a report from Conduc U.K. Limited detailing synthetic seismogram data and velocity log calibration for a geophysical survey conducted by Spectrum Geophysical Services, including measurements and computations related to well depth and geophone positioning.
+2025-03-20 12:49:15,694 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 12:49:16,309 - INFO - Starting Gradio UI...
+2025-03-20 12:49:16,770 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 12:49:16,815 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 12:49:17,701 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 12:49:37,891 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\d6c1721a475526f0b547256809b725b117fb8556b16436b3309a423365c49f00\15_9_19_A_1997_08_01.pdf (0.03MB), max pages: 15
+2025-03-20 12:49:38,552 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\d6c1721a475526f0b547256809b725b117fb8556b16436b3309a423365c49f00\15_9_19_A_1997_08_01.pdf
+2025-03-20 12:49:40,420 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 12:49:40,434 - INFO - Detected Category: Drilling Operations Report
+2025-03-20 12:49:43,943 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 12:49:43,944 - INFO - Extracted Entities:
+Company: Statoil  
+Well Name: 15/9-19 A  
+Rig Name: BYFORD DOLPHIN  
+Formation: Hordaland Group  
+Drilling Fluid: ULTIDRILL  
+Gas Class: trip gas  
+Depth: 2768 mMD, 2178 mMD, 2076 mTVD, 4643 mMD, 1627 mTVD  
+Pressure Test Type: leak off test  
+Temperature: -999.99  
+Water Depth: 84 m  
+Elevation: 25 m  
+Penetration Rate: -999.99 m/h  
+Report Number: 8  
+Spud Date: 1997-07-25  
+Date Well Complete: 1997-08-30
+2025-03-20 12:49:45,859 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 12:49:45,864 - INFO - Generated Summary: The report details the drilling activities and progress of well 15/9-19 by Statoil from July 31 to August 1, 1997, including challenges faced in directional drilling and the completion of an 8.5-inch hole to a depth of 2768 meters.
+2025-03-20 12:49:45,865 - INFO - Results - Classification: Drilling Operations Report, Entities: Company: Statoil  
+Well Name: 15/9-19 A  
+Rig Name: BYFORD DOLPHIN  
+Formation: Hordaland Group  
+Drilling Fluid: ULTIDRILL  
+Gas Class: trip gas  
+Depth: 2768 mMD, 2178 mMD, 2076 mTVD, 4643 mMD, 1627 mTVD  
+Pressure Test Type: leak off test  
+Temperature: -999.99  
+Water Depth: 84 m  
+Elevation: 25 m  
+Penetration Rate: -999.99 m/h  
+Report Number: 8  
+Spud Date: 1997-07-25  
+Date Well Complete: 1997-08-30, Summary: The report details the drilling activities and progress of well 15/9-19 by Statoil from July 31 to August 1, 1997, including challenges faced in directional drilling and the completion of an 8.5-inch hole to a depth of 2768 meters.
+2025-03-20 12:50:34,067 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\b81c8ae33086caa783b28e33083db017cc750be9d57b5b8e30cf42e4c7e05aaa\Introduction_to_Smart_Oil_and_Gas_Wells_Drilling_C.pdf (0.76MB), max pages: 15
+2025-03-20 12:50:35,129 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\b81c8ae33086caa783b28e33083db017cc750be9d57b5b8e30cf42e4c7e05aaa\Introduction_to_Smart_Oil_and_Gas_Wells_Drilling_C.pdf
+2025-03-20 12:50:36,735 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 12:50:36,744 - INFO - Detected Category: Smart Well Technologies Overview
+2025-03-20 12:50:40,783 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 12:50:40,795 - INFO - Extracted Entities:
+Company: Texas A&M University at Qatar  
+Well Name: Fishbone  
+Equipment: Rig Stena Carron, Mechanical External Casing Packers (MECP), Inflow Control Valves (ICV), Inflow Control Devices (ICD), Autonomous Inflow Control Valves (AICD), Inflatable Packers  
+Technology: Smart Wells, Smart Drilling, Smart Completion  
+Location: Doha, Qatar  
+Date: January 18, 2019, January 29, 2019, February 11, 2019  
+Email: mahmood.amani@qatar.tamu.edu  
+Keywords: Smart Wells, Drilling, Monitoring Solutions, Unconventional reservoirs  
+Regulatory Agency: Society of Petroleum Engineers
+2025-03-20 12:50:42,820 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 12:50:42,822 - INFO - Generated Summary: The document provides an overview of "Smart Wells" technologies in the oil and gas industry, detailing their applications in drilling, completion, and monitoring to enhance productivity and profitability, particularly in unconventional reservoirs.
+2025-03-20 12:50:42,822 - INFO - Results - Classification: Smart Well Technologies Overview, Entities: Company: Texas A&M University at Qatar  
+Well Name: Fishbone  
+Equipment: Rig Stena Carron, Mechanical External Casing Packers (MECP), Inflow Control Valves (ICV), Inflow Control Devices (ICD), Autonomous Inflow Control Valves (AICD), Inflatable Packers  
+Technology: Smart Wells, Smart Drilling, Smart Completion  
+Location: Doha, Qatar  
+Date: January 18, 2019, January 29, 2019, February 11, 2019  
+Email: mahmood.amani@qatar.tamu.edu  
+Keywords: Smart Wells, Drilling, Monitoring Solutions, Unconventional reservoirs  
+Regulatory Agency: Society of Petroleum Engineers, Summary: The document provides an overview of "Smart Wells" technologies in the oil and gas industry, detailing their applications in drilling, completion, and monitoring to enhance productivity and profitability, particularly in unconventional reservoirs.
+2025-03-20 12:54:07,861 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\c4ee2ff5f75b9166578adb799e22091f39329889c7070a14a7f34e33bb59ab71\WCR-B-1213.docx (0.15MB), max pages: 15
+2025-03-20 12:54:08,104 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\c4ee2ff5f75b9166578adb799e22091f39329889c7070a14a7f34e33bb59ab71\WCR-B-1213.docx
+2025-03-20 12:54:09,572 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 12:54:09,575 - INFO - Detected Category: Well Completion Report
+2025-03-20 12:54:14,293 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 12:54:14,294 - INFO - Extracted Entities:
+Company: Oil and Natural Gas Corporation Limited  
+Well Name: B-12-13, B-12-T, B-12#1, B-12#5, B-12#8  
+Location: Tapti Daman block, Mumbai Region  
+Rig: Pride Hawaii  
+Formation: Daman Formation, Mahuva Formation, Chinchini, Tapti, Mahim  
+Equipment: 17 ½” bit, 26” hole opener, 20” casing, 13 3/8” casing, 9 5/8” casing, 12 ¼” bit, PDC bit, Tricone bit, BOP  
+Regulatory Agency: MR/WOB/BMG/52/2008-09  
+Production Rate: 36,830 m³/d, 280,992 m³/day, 279 bbl/day  
+API Gravity: 59.0°API  
+Pressure: 230 psi, 2550 psi  
+Temperature: 78°F, 150°F  
+Testing Date: 08.04.09, 16.04.09  
+Sample Depth: 2426.0m, 2348.5m, 2361.5m  
+Gas Concentration: 0.031-0.158%  
+Well Status: Gas bearing  
+Personnel: Shri S. Srinivasan, Dr. R.S. Raskar, Shri J.K. Paul, Shri N.R. Patel, Shri K.M. Sundaram
+2025-03-20 12:54:16,698 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 12:54:16,699 - INFO - Generated Summary: The B-12-13 (B-12-T) well, drilled to a depth of 2503m in the Daman Formation, successfully identified two gas-bearing sands, producing significant gas and condensate during testing, and was subsequently abandoned after achieving its exploratory objectives.
+2025-03-20 12:54:16,700 - INFO - Results - Classification: Well Completion Report, Entities: Company: Oil and Natural Gas Corporation Limited  
+Well Name: B-12-13, B-12-T, B-12#1, B-12#5, B-12#8  
+Location: Tapti Daman block, Mumbai Region  
+Rig: Pride Hawaii  
+Formation: Daman Formation, Mahuva Formation, Chinchini, Tapti, Mahim  
+Equipment: 17 ½” bit, 26” hole opener, 20” casing, 13 3/8” casing, 9 5/8” casing, 12 ¼” bit, PDC bit, Tricone bit, BOP  
+Regulatory Agency: MR/WOB/BMG/52/2008-09  
+Production Rate: 36,830 m³/d, 280,992 m³/day, 279 bbl/day  
+API Gravity: 59.0°API  
+Pressure: 230 psi, 2550 psi  
+Temperature: 78°F, 150°F  
+Testing Date: 08.04.09, 16.04.09  
+Sample Depth: 2426.0m, 2348.5m, 2361.5m  
+Gas Concentration: 0.031-0.158%  
+Well Status: Gas bearing  
+Personnel: Shri S. Srinivasan, Dr. R.S. Raskar, Shri J.K. Paul, Shri N.R. Patel, Shri K.M. Sundaram, Summary: The B-12-13 (B-12-T) well, drilled to a depth of 2503m in the Daman Formation, successfully identified two gas-bearing sands, producing significant gas and condensate during testing, and was subsequently abandoned after achieving its exploratory objectives.
+2025-03-20 15:24:57,100 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 15:24:57,908 - INFO - Starting Gradio UI...
+2025-03-20 15:24:58,366 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 15:24:58,409 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 15:24:59,662 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 15:25:54,607 - WARNING - No file uploaded.
+2025-03-20 15:30:30,550 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 15:30:33,111 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 15:33:33,590 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 15:33:34,148 - INFO - Starting Gradio UI...
+2025-03-20 15:33:34,594 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 15:33:34,628 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 15:33:35,668 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 15:33:51,619 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\01d04c41b5262a662977cc27e2022bf68151109939ad792887adfcf776c75adb\422_02_WDSS_completion_log.pdf (0.18MB), max pages: 15
+2025-03-20 15:33:51,674 - WARNING - No text found in C:\Users\swapn\AppData\Local\Temp\gradio\01d04c41b5262a662977cc27e2022bf68151109939ad792887adfcf776c75adb\422_02_WDSS_completion_log.pdf. Converting to image for OCR.
+2025-03-20 15:33:58,184 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\01d04c41b5262a662977cc27e2022bf68151109939ad792887adfcf776c75adb\422_02_WDSS_completion_log.pdf (0.18MB), max pages: 15
+2025-03-20 15:33:58,242 - WARNING - No text found in C:\Users\swapn\AppData\Local\Temp\gradio\01d04c41b5262a662977cc27e2022bf68151109939ad792887adfcf776c75adb\422_02_WDSS_completion_log.pdf. Converting to image for OCR.
+2025-03-20 15:58:49,450 - INFO - Starting Gradio UI...
+2025-03-20 15:58:50,013 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 15:58:50,056 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 15:58:51,040 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 15:59:24,926 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\01d04c41b5262a662977cc27e2022bf68151109939ad792887adfcf776c75adb\422_02_WDSS_completion_log.pdf (0.18MB), max pages: 15
+2025-03-20 15:59:24,975 - WARNING - No text found in C:\Users\swapn\AppData\Local\Temp\gradio\01d04c41b5262a662977cc27e2022bf68151109939ad792887adfcf776c75adb\422_02_WDSS_completion_log.pdf. Converting to image for OCR.
+2025-03-20 16:07:22,844 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 16:07:23,722 - INFO - Starting Gradio UI...
+2025-03-20 16:07:24,099 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 16:07:24,122 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 16:07:25,136 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 16:07:38,834 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\01d04c41b5262a662977cc27e2022bf68151109939ad792887adfcf776c75adb\422_02_WDSS_completion_log.pdf (0.18MB), max pages: 15
+2025-03-20 16:07:38,881 - WARNING - No text found in C:\Users\swapn\AppData\Local\Temp\gradio\01d04c41b5262a662977cc27e2022bf68151109939ad792887adfcf776c75adb\422_02_WDSS_completion_log.pdf. Converting to image for OCR.
+2025-03-20 16:07:50,662 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:07:50,664 - INFO - Retrying request to /completions in 0.456241 seconds
+2025-03-20 16:07:58,099 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:07:58,099 - INFO - Retrying request to /completions in 0.814513 seconds
+2025-03-20 16:08:07,013 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:16:56,497 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 16:16:57,235 - INFO - Starting Gradio UI...
+2025-03-20 16:16:57,661 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 16:16:57,677 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 16:16:58,748 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 16:18:09,775 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\2c823dd9c95525cc932b8aad42314b6fbf2926d86d832360af3419a43f90a9c2\211_19-M25_rep_GPHYS_VSP_252530830.pdf (0.19MB), max pages: 15
+2025-03-20 16:18:10,674 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\2c823dd9c95525cc932b8aad42314b6fbf2926d86d832360af3419a43f90a9c2\211_19-M25_rep_GPHYS_VSP_252530830.pdf
+2025-03-20 16:20:00,328 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\2c823dd9c95525cc932b8aad42314b6fbf2926d86d832360af3419a43f90a9c2\211_19-M25_rep_GPHYS_VSP_252530830.pdf (0.19MB), max pages: 15
+2025-03-20 16:20:01,126 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\2c823dd9c95525cc932b8aad42314b6fbf2926d86d832360af3419a43f90a9c2\211_19-M25_rep_GPHYS_VSP_252530830.pdf
+2025-03-20 16:23:41,964 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 16:23:42,549 - INFO - Starting Gradio UI...
+2025-03-20 16:23:42,944 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 16:23:42,962 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 16:23:44,188 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 16:26:54,623 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 16:26:55,302 - INFO - Starting Gradio UI...
+2025-03-20 16:26:55,698 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 16:26:55,714 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 16:26:56,810 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 16:27:15,084 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\2c823dd9c95525cc932b8aad42314b6fbf2926d86d832360af3419a43f90a9c2\211_19-M25_rep_GPHYS_VSP_252530830.pdf
+2025-03-20 16:27:17,654 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:27:17,666 - INFO - Detected Category: Log Calibration and Synthetic Seismogram Report
+2025-03-20 16:27:20,825 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:27:20,826 - INFO - Extracted Entities:
+Company: Conoco UK Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19-M25/07  
+Equipment: Geophone, Source  
+Location: Woking, Surrey, England  
+Depth: 185 FT RMSL, 9095-10880 FT, 512.0 FT, 30.0 FT, 0.0 FT  
+Datum: MSL  
+Measurement: Velocity Log, Synthetic Seismogram  
+Reference Level: KB/RT  
+Distance: 114.0 FT  
+Time: 1.0 CSEC, 0.5 CSEC, 1.5 CSEC
+2025-03-20 16:27:20,826 - ERROR - Error during processing: 'summary_length'
+2025-03-20 16:27:38,571 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\10330051d5f9dc1d965bdb22ac08b644aecd3d7acae310946a110e05efc16492\content.txt
+2025-03-20 16:27:38,571 - INFO - Successfully read TXT file: C:\Users\swapn\AppData\Local\Temp\gradio\10330051d5f9dc1d965bdb22ac08b644aecd3d7acae310946a110e05efc16492\content.txt
+2025-03-20 16:27:39,719 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:27:39,719 - INFO - Detected Category: Synthetic Seismogram Report
+2025-03-20 16:27:42,001 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:27:42,001 - INFO - Extracted Entities:
+Company: Conoco U.K. Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: Well 211/19M25/D7  
+Equipment: Velocity Log, Synthetic Seismogram  
+Location: Woking, Surrey, England  
+Regulatory Agency: N/A
+2025-03-20 16:27:42,015 - ERROR - Error during processing: 'summary_length'
+2025-03-20 16:28:06,935 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\c4ee2ff5f75b9166578adb799e22091f39329889c7070a14a7f34e33bb59ab71\WCR-B-1213.docx
+2025-03-20 16:28:08,519 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:28:08,519 - INFO - Detected Category: Well Completion Report
+2025-03-20 16:28:13,317 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:28:13,318 - INFO - Extracted Entities:
+Company: Oil and Natural Gas Corporation Limited  
+Well Name: B-12-13, B-12-T, B-12#1, B-12#5, B-12#8  
+Location: Tapti Daman block, Mumbai Region  
+Rig: Pride Hawaii  
+Formation: Daman Formation, Mahuva Formation, Chinchini, Tapti, Mahim  
+Regulatory Agency: MR/WOB/BMG/52/2008-09  
+Equipment: 17 ½” bit, 26” hole opener, 20” casing, 13 3/8” casing, 9 5/8” casing, 12 ¼” bit, PDC bit, Tricone bit, BOP  
+Production Rate: 36,830 m³/d, 280,992 m³/day, 279 bbl/day  
+API Gravity: 59.0°API  
+Pressure: 230 psi, 2550 psi  
+Temperature: 78°F, 150°F  
+Sample Depth: 2427.5m, 2426.0m, 2348.5m, 2361.5m  
+Testing Date: 08.04.09, 16.04.09  
+Well Status: Gas bearing  
+Personnel: Shri S. Srinivasan, Dr. R.S. Raskar, Shri J.K. Paul, Shri N.R. Patel, Shri K.M. Sundaram
+2025-03-20 16:28:13,318 - ERROR - Error during processing: 'summary_length'
+2025-03-20 16:28:34,253 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\c4ee2ff5f75b9166578adb799e22091f39329889c7070a14a7f34e33bb59ab71\WCR-B-1213.docx
+2025-03-20 16:28:36,241 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:28:36,286 - INFO - Detected Category: Well Completion Report
+2025-03-20 16:28:43,088 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:28:43,089 - INFO - Extracted Entities:
+Company: Oil and Natural Gas Corporation Limited  
+Well Name: B-12-13, B-12-T, B-12#1, B-12#5, B-12#8  
+Location: Tapti Daman block, Mumbai Region  
+Rig: Pride Hawaii  
+Formation: Daman Formation, Mahuva Formation, Chinchini, Tapti, Mahim  
+Regulatory Agency: MR/WOB/BMG/52/2008-09  
+Equipment: 17 ½” bit, 26” hole opener, 20” casing, 13 3/8” casing, 9 5/8” casing, 12 ¼” bit, PDC bit, Tricone bit, BOP  
+Production Rate: 36,830 m³/d, 280,992 m³/day, 279 bbl/day  
+API Gravity: 59.0°API  
+Pressure: FTHP-230 psi, FTHP-2550 psi  
+Testing Date: 08.04.09, 16.04.09  
+Sample Depth: 2426.0m, 2348.5m, 2361.5m  
+Well Status: Gas bearing  
+Personnel: Shri S. Srinivasan, Dr. R.S. Raskar, Shri J.K. Paul, Shri N.R. Patel, Shri K.M. Sundaram
+2025-03-20 16:28:43,090 - ERROR - Error during processing: 'summary_length'
+2025-03-20 16:32:46,925 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 16:32:47,691 - INFO - Starting Gradio UI...
+2025-03-20 16:32:48,101 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 16:32:48,128 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 16:32:49,106 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 16:32:57,538 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\10330051d5f9dc1d965bdb22ac08b644aecd3d7acae310946a110e05efc16492\content.txt
+2025-03-20 16:32:57,543 - INFO - Successfully read TXT file: C:\Users\swapn\AppData\Local\Temp\gradio\10330051d5f9dc1d965bdb22ac08b644aecd3d7acae310946a110e05efc16492\content.txt
+2025-03-20 16:32:58,605 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:32:58,620 - INFO - Detected Category: Synthetic Seismogram Report
+2025-03-20 16:33:01,013 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:33:01,014 - INFO - Extracted Entities:
+Company: Conoco U.K. Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19M25/D7, 211/19M25/U7  
+Equipment: Velocity Log, Synthetic Seismogram  
+Location: Woking, Surrey, England  
+Depth: 909520880 FT, 185 F AMSL  
+Measurement: True vertical depth, Measured depth, Source depth, Water depth  
+Data Type: High energy random wave, High frequency noise
+2025-03-20 16:33:02,948 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:33:02,953 - INFO - Results - Classification: Synthetic Seismogram Report, Entities: Company: Conoco U.K. Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19M25/D7, 211/19M25/U7  
+Equipment: Velocity Log, Synthetic Seismogram  
+Location: Woking, Surrey, England  
+Depth: 909520880 FT, 185 F AMSL  
+Measurement: True vertical depth, Measured depth, Source depth, Water depth  
+Data Type: High energy random wave, High frequency noise, Summary: The text is a technical report from Spectrum Geophysical Services detailing synthetic seismogram data and velocity log calibration for a marine well, including various measurements and computations related to geophone positioning and source depth.
+2025-03-20 16:33:16,260 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\c4ee2ff5f75b9166578adb799e22091f39329889c7070a14a7f34e33bb59ab71\WCR-B-1213.docx
+2025-03-20 16:33:17,855 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:33:17,859 - INFO - Detected Category: Well Completion Report
+2025-03-20 16:33:23,090 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:33:23,091 - INFO - Extracted Entities:
+Company: Oil and Natural Gas Corporation Limited  
+Well Name: B-12-13, B-12-T, B-12#1, B-12#5, B-12#8  
+Regulatory Agency: MR/WOB/BMG/52/2008-09  
+Equipment: Rig Pride Hawaii  
+Formation: Daman Formation, Mahuva Formation, Chinchini, Tapti, Mahim  
+Gas Type: Gas, Condensate  
+Location: Tapti Daman block, Mumbai Region  
+Testing Object: Object-I, Object-II  
+Depth: 2500.0m, 2503m, 2427.5m, 2426.0m, 2348.5m, 2361.5m  
+Production Rate: 36,830m3/d, 280,992m3/day, 279 bbl/day  
+API Gravity: 59.0°API  
+Pressure: 230psi, 2550psi  
+Temperature: 78°F, 150°F  
+Mud Type: KCL-PHPA mud system  
+Personnel: Shri S. Srinivasan, Dr. R.S. Raskar, Shri J.K. Paul, Shri N.R. Patel, Shri K.M. Sundaram
+2025-03-20 16:33:25,014 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:33:25,015 - INFO - Results - Classification: Well Completion Report, Entities: Company: Oil and Natural Gas Corporation Limited  
+Well Name: B-12-13, B-12-T, B-12#1, B-12#5, B-12#8  
+Regulatory Agency: MR/WOB/BMG/52/2008-09  
+Equipment: Rig Pride Hawaii  
+Formation: Daman Formation, Mahuva Formation, Chinchini, Tapti, Mahim  
+Gas Type: Gas, Condensate  
+Location: Tapti Daman block, Mumbai Region  
+Testing Object: Object-I, Object-II  
+Depth: 2500.0m, 2503m, 2427.5m, 2426.0m, 2348.5m, 2361.5m  
+Production Rate: 36,830m3/d, 280,992m3/day, 279 bbl/day  
+API Gravity: 59.0°API  
+Pressure: 230psi, 2550psi  
+Temperature: 78°F, 150°F  
+Mud Type: KCL-PHPA mud system  
+Personnel: Shri S. Srinivasan, Dr. R.S. Raskar, Shri J.K. Paul, Shri N.R. Patel, Shri K.M. Sundaram, Summary: The B-12-13 (B-12-T) well, drilled by Oil and Natural Gas Corporation Limited to explore hydrocarbon potential in the Daman Formation, successfully reached a depth of 2503 meters, encountering two gas-bearing sands that produced significant gas and condensate during testing before the well was abandoned.
+2025-03-20 16:33:39,608 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\5c84ec1d3098f796d4047f31e0ad532296d435b3230bff615feefb281828021f\WCR-B-1213.pdf
+2025-03-20 16:33:42,537 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:33:42,538 - INFO - Detected Category: Well Completion Report
+2025-03-20 16:33:52,073 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:33:52,075 - INFO - Extracted Entities:
+Company: Oil and Natural Gas Corporation Limited  
+Well Name: WCR-B-12#13, B-12-13, B-12-T  
+Regulatory Agency: MR/WOB/BMG/52/2008-09  
+Equipment: Rig Pride Hawaii  
+Formation: Daman Formation, Mahuva Formation, Tapti Daman block  
+Gas Type: Gas bearing  
+Production Rate: 36,830m3/d, 2,80,992m3/day, 279 bbl/day  
+API Gravity: 59.0°API  
+Location: Mumbai, India, Western Offshore  
+Coordinates: 20° 05’ 18.676”, 71° 52’ 31.085”  
+Testing Method: MDT (Modular Dynamic Tester)  
+Well Status: Abandoned  
+Date: September 2009, 10.01.2009, 18.02.2009, 20.03.2009, 18.04.2009, 22.04.2009  
+Depth: 2503m, 2500.0mMSL, 2530m  
+Casing Size: 30”, 26”, 20”, 17 ½”, 13 3/8”, 12 ¼”, 9 5/8”  
+Choke Size: ½”  
+Pressure: FTHP-230psi, FTHT-78°F, FTHP-2550psi, FTHT-150°F  
+Well Category: Exploratory, B-Category, Expendable  
+Hydrocarbon Shows: Gas, Formation water  
+Sample Depth: 2292.5m, 2361.2m, 2427.5m, 2426.0m, 2348.50m, 2361.50m  
+Well Chronology: Spudded on 18.02.09, Drilling completed on 20.03.09, Production testing completed on 18.04.09  
+Testing Proposal: Approved by Basin Manager  
+Reservoir Studies: Reservoir Study Plan from Reservoir data Acquisition Group  
+Analysis Reports: Oil/Gas/Water Analysis Reports  
+Logging Tools: GR-HRLA-MCFL, GR-Resistivity-Neutron, MDT, FMI, DSLT, CBL-VDL  
+Formation Evaluation: Geological Data, Geophysical Data  
+Complications: During Drilling, During Production Testing  
+Conclusion: Gas bearing  
+Recommendation: Post Drilling Analysis  
+Personnel: Wellsite Personnel
+2025-03-20 16:33:56,373 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:33:56,388 - INFO - Results - Classification: Well Completion Report, Entities: Company: Oil and Natural Gas Corporation Limited  
+Well Name: WCR-B-12#13, B-12-13, B-12-T  
+Regulatory Agency: MR/WOB/BMG/52/2008-09  
+Equipment: Rig Pride Hawaii  
+Formation: Daman Formation, Mahuva Formation, Tapti Daman block  
+Gas Type: Gas bearing  
+Production Rate: 36,830m3/d, 2,80,992m3/day, 279 bbl/day  
+API Gravity: 59.0°API  
+Location: Mumbai, India, Western Offshore  
+Coordinates: 20° 05’ 18.676”, 71° 52’ 31.085”  
+Testing Method: MDT (Modular Dynamic Tester)  
+Well Status: Abandoned  
+Date: September 2009, 10.01.2009, 18.02.2009, 20.03.2009, 18.04.2009, 22.04.2009  
+Depth: 2503m, 2500.0mMSL, 2530m  
+Casing Size: 30”, 26”, 20”, 17 ½”, 13 3/8”, 12 ¼”, 9 5/8”  
+Choke Size: ½”  
+Pressure: FTHP-230psi, FTHT-78°F, FTHP-2550psi, FTHT-150°F  
+Well Category: Exploratory, B-Category, Expendable  
+Hydrocarbon Shows: Gas, Formation water  
+Sample Depth: 2292.5m, 2361.2m, 2427.5m, 2426.0m, 2348.50m, 2361.50m  
+Well Chronology: Spudded on 18.02.09, Drilling completed on 20.03.09, Production testing completed on 18.04.09  
+Testing Proposal: Approved by Basin Manager  
+Reservoir Studies: Reservoir Study Plan from Reservoir data Acquisition Group  
+Analysis Reports: Oil/Gas/Water Analysis Reports  
+Logging Tools: GR-HRLA-MCFL, GR-Resistivity-Neutron, MDT, FMI, DSLT, CBL-VDL  
+Formation Evaluation: Geological Data, Geophysical Data  
+Complications: During Drilling, During Production Testing  
+Conclusion: Gas bearing  
+Recommendation: Post Drilling Analysis  
+Personnel: Wellsite Personnel, Summary: The WCR-B-12#13 report details the drilling and completion of the B-12#13 well by Oil and Natural Gas Corporation Limited in the Tapti Daman block, which successfully explored hydrocarbon potential in the Daman Formation, achieving gas production rates of 36,830 m³/d and 280,992 m³/d from two tested intervals before the well was abandoned and declared gas-bearing.
+2025-03-20 16:34:40,778 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\2c823dd9c95525cc932b8aad42314b6fbf2926d86d832360af3419a43f90a9c2\211_19-M25_rep_GPHYS_VSP_252530830.pdf
+2025-03-20 16:34:43,157 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:34:43,158 - INFO - Detected Category: Log Calibration and Synthetic Seismogram Report
+2025-03-20 16:34:45,329 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:34:45,338 - INFO - Extracted Entities:
+Company: Conoco UK Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19-M25/07  
+Equipment: Geophone, Source  
+Location: Woking, Surrey, England  
+Measurement: Velocity Log, Synthetic Seismogram  
+Reference Level: MSL (Mean Sea Level)  
+Depth: 9095-10880 FT, 185 FT RMSL
+2025-03-20 16:34:46,940 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:34:46,942 - INFO - Results - Classification: Log Calibration and Synthetic Seismogram Report, Entities: Company: Conoco UK Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19-M25/07  
+Equipment: Geophone, Source  
+Location: Woking, Surrey, England  
+Measurement: Velocity Log, Synthetic Seismogram  
+Reference Level: MSL (Mean Sea Level)  
+Depth: 9095-10880 FT, 185 FT RMSL, Summary: The document is a log calibration and synthetic seismogram report for Conoco UK Limited's well 211/19-M25/07, detailing various geophysical measurements, processing data, and computations related to downhole velocity logging and well deviation.
+2025-03-20 16:35:35,342 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\dc513aa87fbf224ed0eea5550c813a20f614507c89afc3eafd5689419aed9a22\211_19-M21_rep_GPHYS_CSHOT_252141573.pdf
+2025-03-20 16:35:35,359 - WARNING - No text found in C:\Users\swapn\AppData\Local\Temp\gradio\dc513aa87fbf224ed0eea5550c813a20f614507c89afc3eafd5689419aed9a22\211_19-M21_rep_GPHYS_CSHOT_252141573.pdf. Converting to image for OCR.
+2025-03-20 16:35:42,879 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:35:42,879 - INFO - Retrying request to /completions in 0.427389 seconds
+2025-03-20 16:35:45,461 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:35:45,461 - INFO - Retrying request to /completions in 0.780657 seconds
+2025-03-20 16:35:48,695 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:35:56,059 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:35:56,059 - INFO - Retrying request to /completions in 0.402332 seconds
+2025-03-20 16:35:58,043 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:35:58,043 - INFO - Retrying request to /completions in 0.761085 seconds
+2025-03-20 16:35:59,722 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:36:12,375 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:36:12,377 - INFO - Retrying request to /completions in 0.473193 seconds
+2025-03-20 16:36:13,978 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:36:13,978 - INFO - Retrying request to /completions in 0.798073 seconds
+2025-03-20 16:36:15,899 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:42:52,218 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 16:42:53,299 - INFO - Starting Gradio UI...
+2025-03-20 16:42:53,712 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 16:42:53,733 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 16:42:54,755 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 16:44:01,135 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\dc513aa87fbf224ed0eea5550c813a20f614507c89afc3eafd5689419aed9a22\211_19-M21_rep_GPHYS_CSHOT_252141573.pdf
+2025-03-20 16:44:01,150 - WARNING - No text found in C:\Users\swapn\AppData\Local\Temp\gradio\dc513aa87fbf224ed0eea5550c813a20f614507c89afc3eafd5689419aed9a22\211_19-M21_rep_GPHYS_CSHOT_252141573.pdf. Converting to image for OCR.
+2025-03-20 16:44:08,866 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:44:08,866 - INFO - Retrying request to /completions in 0.467470 seconds
+2025-03-20 16:44:11,430 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:44:11,431 - INFO - Retrying request to /completions in 0.760602 seconds
+2025-03-20 16:44:14,300 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:44:21,351 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:44:21,351 - INFO - Retrying request to /completions in 0.481790 seconds
+2025-03-20 16:44:23,584 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:44:23,584 - INFO - Retrying request to /completions in 0.924938 seconds
+2025-03-20 16:44:26,467 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:44:38,631 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:44:38,632 - INFO - Retrying request to /completions in 0.468592 seconds
+2025-03-20 16:44:41,184 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:44:41,184 - INFO - Retrying request to /completions in 0.768658 seconds
+2025-03-20 16:44:43,111 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:54:54,312 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-03-20 16:54:55,056 - INFO - Starting Gradio UI...
+2025-03-20 16:54:55,432 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-20 16:54:55,469 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-20 16:54:56,563 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-03-20 16:55:14,329 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\2c823dd9c95525cc932b8aad42314b6fbf2926d86d832360af3419a43f90a9c2\211_19-M25_rep_GPHYS_VSP_252530830.pdf
+2025-03-20 16:55:16,403 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:55:16,417 - INFO - Detected Category: Log Calibration and Synthetic Seismogram Report
+2025-03-20 16:55:19,380 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:55:19,381 - INFO - Extracted Entities:
+Company: Conoco UK Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19-M25/07  
+Equipment: Geophone, Source  
+Location: Woking, Surrey, England  
+Depth: 185 FT RMSL, 9095-10880 FT, 512.0 FT, 30.0 FT, 0.0 FT  
+Datum: MSL  
+Measurement: Velocity Log, Synthetic Seismogram  
+Reference Level: KB/RT  
+Distance: 114.0 FT  
+Time: 1.0 CSEC, 0.5 CSEC, 1.5 CSEC
+2025-03-20 16:55:21,195 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:55:21,207 - INFO - \U0001f539 Summary Generated | Time: 1.83s | Tokens Used: Input=2953, Output=47, Total=3000
+2025-03-20 16:55:21,208 - INFO - Results - Classification: Log Calibration and Synthetic Seismogram Report, Entities: Company: Conoco UK Limited, Spectrum Geophysical Services, Spectrum Energy and Information Technology Limited  
+Well Name: 211/19-M25/07  
+Equipment: Geophone, Source  
+Location: Woking, Surrey, England  
+Depth: 185 FT RMSL, 9095-10880 FT, 512.0 FT, 30.0 FT, 0.0 FT  
+Datum: MSL  
+Measurement: Velocity Log, Synthetic Seismogram  
+Reference Level: KB/RT  
+Distance: 114.0 FT  
+Time: 1.0 CSEC, 0.5 CSEC, 1.5 CSEC, Summary: The document is a log calibration and synthetic seismogram report for Conoco UK Limited's well 211/19-M25/07, detailing various geophysical measurements, processing data, and computations related to downhole velocity logging.
+2025-03-20 16:56:57,412 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\dc513aa87fbf224ed0eea5550c813a20f614507c89afc3eafd5689419aed9a22\211_19-M21_rep_GPHYS_CSHOT_252141573.pdf
+2025-03-20 16:56:57,423 - WARNING - No text found in C:\Users\swapn\AppData\Local\Temp\gradio\dc513aa87fbf224ed0eea5550c813a20f614507c89afc3eafd5689419aed9a22\211_19-M21_rep_GPHYS_CSHOT_252141573.pdf. Converting to image for OCR.
+2025-03-20 16:57:05,209 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:57:05,211 - INFO - Retrying request to /completions in 0.410256 seconds
+2025-03-20 16:57:07,233 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:57:07,233 - INFO - Retrying request to /completions in 0.794159 seconds
+2025-03-20 16:57:09,993 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:57:16,728 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:57:16,728 - INFO - Retrying request to /completions in 0.406373 seconds
+2025-03-20 16:57:18,910 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:57:18,910 - INFO - Retrying request to /completions in 0.763729 seconds
+2025-03-20 16:57:21,809 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:57:34,328 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:57:34,328 - INFO - Retrying request to /completions in 0.402207 seconds
+2025-03-20 16:57:36,946 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:57:36,946 - INFO - Retrying request to /completions in 0.837162 seconds
+2025-03-20 16:57:40,088 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-20 16:58:42,915 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\57270cf6e5b4e889395fcdd941de66138326e8b89c33faeffe7612956e2c7dae\213_27-_4Y_rep_DRILL_GEN_269903915.pdf
+2025-03-20 16:58:44,160 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:58:44,161 - INFO - Detected Category: Daily Drilling Activity Report
+2025-03-20 16:58:46,780 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:58:46,780 - INFO - Extracted Entities:
+Company: CHEVRON NORTH SEA LIMITED  
+Well Name: 213/27-Y  
+Rig: Stena Carron  
+Location: West of Shetland  
+Equipment: MWD, BHA No. 6, Bit Model MXL-55DX  
+Personnel: Jeniffer Leyes, Giorgio Spacagna, Craig Beaton, David Robinson  
+Date: 23-Jul-2009, 19-Jun-2009, 21-Jul-2009, 19-Aug-2009  
+Depth: 11392.0 ft  
+Job Number: 09UKT0050
+2025-03-20 16:58:48,577 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:58:48,578 - INFO - \U0001f539 Summary Generated | Time: 1.8s | Tokens Used: Input=1935, Output=63, Total=1998
+2025-03-20 16:58:48,578 - INFO - Results - Classification: Daily Drilling Activity Report, Entities: Company: CHEVRON NORTH SEA LIMITED  
+Well Name: 213/27-Y  
+Rig: Stena Carron  
+Location: West of Shetland  
+Equipment: MWD, BHA No. 6, Bit Model MXL-55DX  
+Personnel: Jeniffer Leyes, Giorgio Spacagna, Craig Beaton, David Robinson  
+Date: 23-Jul-2009, 19-Jun-2009, 21-Jul-2009, 19-Aug-2009  
+Depth: 11392.0 ft  
+Job Number: 09UKT0050, Summary: The D&M Daily Activity Report No. 35, dated July 23, 2009, details the operations of the Stena Carron rig, including a wiper trip to an 8.5-inch section for Chevron North Sea Limited, with specific drilling parameters, equipment usage, and personnel involved.
+2025-03-20 16:59:37,033 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\2d934a532cd0c34640289cb391c8c06cd4548bc14a4f559dd7b3f845f91e2118\15_9_19_ST2_1993_04_20.pdf
+2025-03-20 16:59:39,614 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:59:39,614 - INFO - Detected Category: Drilling Operations Report
+2025-03-20 16:59:40,731 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:59:40,731 - INFO - Extracted Entities:
+Company: Statoil  
+Well Name: 15/9-19 ST2  
+Rig Name: TREASURE  
+Drilling Contractor: UNKNOWN  
+Fluid Type: BRINE
+2025-03-20 16:59:42,650 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 16:59:42,650 - INFO - \U0001f539 Summary Generated | Time: 1.92s | Tokens Used: Input=1239, Output=50, Total=1289
+2025-03-20 16:59:42,650 - INFO - Results - Classification: Drilling Operations Report, Entities: Company: Statoil  
+Well Name: 15/9-19 ST2  
+Rig Name: TREASURE  
+Drilling Contractor: UNKNOWN  
+Fluid Type: BRINE, Summary: The report details the drilling activities and operations of the wellbore managed by Statoil from September 15 to 19, 1993, highlighting normal status, various tests conducted, and the retrieval of bottom hole samples while addressing equipment issues.
+2025-03-20 17:00:28,918 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\0eba7d10819ee68cdb4c8af36c96e39042f76ff580ec499290b126a001dbaef1\16_28-A22_rep_WELL_COMP_234203468.pdf.content.txt
+2025-03-20 17:00:28,918 - INFO - Successfully read TXT file: C:\Users\swapn\AppData\Local\Temp\gradio\0eba7d10819ee68cdb4c8af36c96e39042f76ff580ec499290b126a001dbaef1\16_28-A22_rep_WELL_COMP_234203468.pdf.content.txt
+2025-03-20 17:00:30,434 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 17:00:30,445 - INFO - Detected Category: Completion Program Document
+2025-03-20 17:00:34,317 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 17:00:34,332 - INFO - Extracted Entities:
+Company: Britoil Exploration Ltd
+Well Name: 16/28-A22, 16/28-A806, 16/28-AS07, 16/28-A15, 16/28-A16, 16/28-A17, 16/28-A06, 16/28-A09, 16/28-A10
+Platform: Andrew Platform
+Equipment: Swell Packers, Gas Lift completion, Pre-Drilled Liner
+Regulatory Agency: N/A
+Personnel: A. Wallace, A. Wilson, Bill McLellan, Alex Wallace, Allan Wilson, Darren Bewick, Jordy Buter, Glenn Higgs, Andy Zglobis, Kerry Ann Duffy, Timur Naukenov, Roger Skinner, Pete Williams, Munro Grant, Elliott Connors, Derek Stewart
+Project: Low Cost Drilling (LCD) Project
+Location: Andrew field
+Date: March 2008, January 2008, April 2005, April 2002, March 2003, April 2004, 1974
+Coordinates: Latitude: 58 02 51.28 N, Longitude: 01 24 15.70 E
+2025-03-20 17:00:35,766 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 17:00:35,766 - INFO - \U0001f539 Summary Generated | Time: 1.43s | Tokens Used: Input=3790, Output=45, Total=3835
+2025-03-20 17:00:35,766 - INFO - Results - Classification: Completion Program Document, Entities: Company: Britoil Exploration Ltd
+Well Name: 16/28-A22, 16/28-A806, 16/28-AS07, 16/28-A15, 16/28-A16, 16/28-A17, 16/28-A06, 16/28-A09, 16/28-A10
+Platform: Andrew Platform
+Equipment: Swell Packers, Gas Lift completion, Pre-Drilled Liner
+Regulatory Agency: N/A
+Personnel: A. Wallace, A. Wilson, Bill McLellan, Alex Wallace, Allan Wilson, Darren Bewick, Jordy Buter, Glenn Higgs, Andy Zglobis, Kerry Ann Duffy, Timur Naukenov, Roger Skinner, Pete Williams, Munro Grant, Elliott Connors, Derek Stewart
+Project: Low Cost Drilling (LCD) Project
+Location: Andrew field
+Date: March 2008, January 2008, April 2005, April 2002, March 2003, April 2004, 1974
+Coordinates: Latitude: 58 02 51.28 N, Longitude: 01 24 15.70 E, Summary: The text outlines the Lower Upper Completion Program for the Andrew Platform, detailing the project objectives, operational guidelines, and technical specifications for drilling and completing two sidetracks to enhance oil production while ensuring safety and efficiency in operations.
+2025-03-20 17:01:15,016 - INFO - Processing file: C:\Users\swapn\AppData\Local\Temp\gradio\477d20acbbad4fc0572d8936aa88a7321b7016f187036da5856952a577f0ad59\422_1.pdf
+2025-03-20 17:01:16,751 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 17:01:16,754 - INFO - Detected Category: Well Testing Report
+2025-03-20 17:01:23,600 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 17:01:23,606 - INFO - Extracted Entities:
+Company: 
+Well Name: DST_1, DST_2
+Equipment: 16/64 inch choke, separator
+Material: Mil Bar, Mil Gel, Drispac Reg., Drispac Su.Lo., CMC Hv, CMC Lv, Unical, Lubrisal, MD Detergent, Drilling Detergent, Alvar Detergent, Caustic Soda, Gypsum, Bicarbonate, Soda Ash, Nut Plug F, Mica M, W.O. Defoamer, Flosal, Sodium Nitrate, Mil Spot, Mil Free, CaCl2, Lime, Fiber Tex, Detergent Soap, Salt Water Gel
+Testing Method: DST, RFT
+Production Rate: 5000 BOPD, 9000 BOPD, 12000 BOPD, 18000 BOPD
+Pressure: 5548 psig, 1500 psi, 500 psi, 27600 KPa, 37900 KPa, 38300 KPa, 35030 KPa, 38270 KPa, 38260 KPa
+Reservoir Parameter: Oil permeability, Skin factor, Productivity index, Flow capacity, Reservoir pressure
+Fluid Type: salt water, oil
+Gas to Oil Ratio: 670 scf/STB, 120 m3/m3 (735 scf/STB)
+2025-03-20 17:01:24,985 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-20 17:01:24,988 - INFO - \U0001f539 Summary Generated | Time: 1.38s | Tokens Used: Input=1706, Output=39, Total=1745
+2025-03-20 17:01:24,988 - INFO - Results - Classification: Well Testing Report, Entities: Company: 
+Well Name: DST_1, DST_2
+Equipment: 16/64 inch choke, separator
+Material: Mil Bar, Mil Gel, Drispac Reg., Drispac Su.Lo., CMC Hv, CMC Lv, Unical, Lubrisal, MD Detergent, Drilling Detergent, Alvar Detergent, Caustic Soda, Gypsum, Bicarbonate, Soda Ash, Nut Plug F, Mica M, W.O. Defoamer, Flosal, Sodium Nitrate, Mil Spot, Mil Free, CaCl2, Lime, Fiber Tex, Detergent Soap, Salt Water Gel
+Testing Method: DST, RFT
+Production Rate: 5000 BOPD, 9000 BOPD, 12000 BOPD, 18000 BOPD
+Pressure: 5548 psig, 1500 psi, 500 psi, 27600 KPa, 37900 KPa, 38300 KPa, 35030 KPa, 38270 KPa, 38260 KPa
+Reservoir Parameter: Oil permeability, Skin factor, Productivity index, Flow capacity, Reservoir pressure
+Fluid Type: salt water, oil
+Gas to Oil Ratio: 670 scf/STB, 120 m3/m3 (735 scf/STB), Summary: The text provides detailed data on testing materials and quantities used in various casing intervals, along with results from two production tests indicating flow rates, reservoir pressures, and potential production capacities for a well.
