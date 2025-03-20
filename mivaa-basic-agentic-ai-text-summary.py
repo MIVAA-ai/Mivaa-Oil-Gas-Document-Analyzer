@@ -5,10 +5,9 @@ from langgraph.graph import StateGraph, END  # Importing StateGraph for managing
 from langchain.prompts import PromptTemplate  # Importing PromptTemplate to format prompts
 from langchain_openai import ChatOpenAI  # Importing ChatOpenAI to use OpenAI's chat model
 from langchain.schema import HumanMessage  # Importing HumanMessage to represent user input
-import logging
 import gradio as gr
 import logging
-from file_reader import read_text_file
+from file_reader import extract_text
 
 # Configure logging
 log_dir = "logs"
@@ -19,7 +18,6 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
-
 
 # Maximum allowed file size (5MB)
 MAX_FILE_SIZE_MB = 5  # 5MB in megabytes
@@ -176,105 +174,123 @@ def entity_extraction_node(state: State):
         logging.error(f"Error in entity_extraction_node: {str(e)}")
         return {"entities": f"Error: {str(e)}"}
 
+import time
+
+# Ensure logs directory exists
+log_dir = "logs"
+os.makedirs(log_dir, exist_ok=True)
+
+# Configure logging
+logging.basicConfig(
+    filename=os.path.join(log_dir, "openai_usage.log"),
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
 
 def summarize_text(state):
-    """
-    Generates a one-sentence summary of the input oil and gas document.
+    """Generates a summary based on the user's selected summary length and logs response time & token usage."""
 
-    Parameters:
-        state (dict): The current state dictionary containing the input text.
+    summary_length_map = {
+        "Short": "one sentence",
+        "Detailed": "three paragraphs"
+    }
 
-    Returns:
-        dict: A dictionary with the "summary" key containing the summarized text.
-    """
-    if not state.get("text") or not state["text"].strip():
-        logging.warning("Empty input text received for summarization.")
-        return {"summary": "Error: No text provided for summarization."}
+    # Get user's summary preference
+    summary_length = state.get("summary_length", "Short")  # Default to Short
+    summary_length = summary_length_map.get(summary_length, "one sentence")  # Ensure valid mapping
+
+    # Create a prompt dynamically based on user preference
+    prompt = f"Summarize the following text in {summary_length}.\n\nText: {state['text']}\n\nSummary:"
 
     try:
-        # Define an improved summarization prompt
-        summarization_prompt = PromptTemplate.from_template(
-            """Summarize the following oil and gas industry document in one concise sentence.
+        start_time = time.time()  # Start tracking time
 
-            Text: {text}
+        response = llm.invoke([HumanMessage(content=prompt)])  # Call OpenAI LLM
 
-            Summary:"""
+        end_time = time.time()  # End tracking time
+        elapsed_time = round(end_time - start_time, 2)  # Calculate elapsed time
+
+        # ✅ Extract text from AIMessage
+        if isinstance(response, str):
+            summary = response.strip()
+        elif hasattr(response, "content"):  # AIMessage case
+            summary = response.content.strip()
+        else:
+            summary = "⚠️ Error: Unexpected LLM response format."
+
+        # ✅ Extract token usage details if available
+        token_usage = getattr(response, "response_metadata", {}).get("token_usage", {})
+        input_tokens = token_usage.get("prompt_tokens", 0)
+        output_tokens = token_usage.get("completion_tokens", 0)
+        total_tokens = token_usage.get("total_tokens", 0)
+
+        # ✅ Log API usage and response time
+        logging.info(
+            f"🔹 Summary Generated | Time: {elapsed_time}s | Tokens Used: Input={input_tokens}, Output={output_tokens}, Total={total_tokens}"
         )
 
-        # Create a processing chain: Pass the formatted prompt to the LLM
-        chain = summarization_prompt | llm
-
-        # Execute the chain using the text from the state dictionary
-        response = chain.invoke({"text": state["text"]})
-
-        # Ensure response is valid
-        if not response or not response.content:
-            logging.error("LLM returned an empty summary response.")
-            return {"summary": "Error: Summary could not be generated."}
-
-        summary = response.content.strip()
-        logging.info(f"Generated Summary: {summary}")
-
-        return {"summary": summary}
-
     except Exception as e:
-        logging.error(f"Error in summarize_text: {str(e)}")
-        return {"summary": f"Error: {str(e)}"}
+        summary = f"⚠️ Error: Failed to generate summary - {str(e)}"
+        logging.error(f"❌ OpenAI Request Failed: {str(e)}")
+
+    return {"summary": summary}
+
+# Global variable to store the compiled workflow
+app = None
+
+def initialize_workflow():
+    """Initializes the LangGraph workflow for text processing."""
+    global app
+    if app is None:  # Ensure the workflow is only initialized once
+        workflow = StateGraph(State)
+
+        # Add processing nodes (functions) to the workflow graph
+        workflow.add_node("classification_node", classification_node)
+        workflow.add_node("entity_extraction", entity_extraction_node)
+        workflow.add_node("summarization", summarize_text)
+
+        # Define execution order
+        workflow.set_entry_point("classification_node")
+        workflow.add_edge("classification_node", "entity_extraction")
+        workflow.add_edge("entity_extraction", "summarization")
+        workflow.add_edge("summarization", END)
+
+        # Compile the workflow once
+        app = workflow.compile()
+
+# Initialize workflow at script startup
+initialize_workflow()
 
 
-def process_uploaded_file(file):
+def process_uploaded_file(file, max_pages, max_file_size, summary_length):
     """
-    Reads the uploaded text file and processes it through the LangChain workflow.
-
-    Parameters:
-        file (gr.File): The uploaded text file.
-
-    Returns:
-        tuple: Classification, Entities, and Summary results.
+    Reads the uploaded file and processes it through LLM with OCR.
+    Returns classification, entity extraction, summary, OCR status, and status message.
     """
+
     if file is None:
         logging.warning("No file uploaded.")
-        return "Error: No file uploaded.", "Error: No file uploaded.", "Error: No file uploaded."
+        return "⚠️ Error: No file uploaded.", "", "", "❌ No OCR Applied.", "❌ No file uploaded."
 
-    # Check file size
-    file_size_mb = os.path.getsize(file.name) / (1024 * 1024)  # Convert bytes to MB
-    if file_size_mb > MAX_FILE_SIZE_MB:
-        logging.error(f"File {file.name} exceeds the 5MB limit ({file_size_mb:.2f}MB).")
-        return "Error: File too large. Please upload a file smaller than 5MB.", "", ""
-
-    logging.info(f"Processing file: {file.name} ({file_size_mb:.2f}MB)")
-
-    # Read file content
-    text_content = read_text_file(file.name)
-
-    if text_content.startswith("Error:"):
-        logging.error(f"File reading error: {text_content}")
-        return text_content, "Error extracting entities.", "Error generating summary."
+    # Ensure LangGraph workflow is initialized
+    global app
+    if app is None:
+        initialize_workflow()  # Call the function to initialize if not already
 
     logging.info(f"Processing file: {file.name}")
 
-    # Define a state-based workflow using a StateGraph
-    workflow = StateGraph(State)
+    # Read file content
+    text_content = extract_text(file.name, max_pages)
+    if text_content.startswith("Error:"):
+        return text_content, "", "", "❌ No OCR Applied.", "❌ Error in file processing."
 
-    # Add processing nodes (functions) to the workflow graph
-    workflow.add_node("classification_node", classification_node)  # Step 1: Classify text
-    workflow.add_node("entity_extraction", entity_extraction_node)  # Step 2: Extract entities
-    workflow.add_node("summarization", summarize_text)  # Step 3: Summarize the text
+    # Detect OCR usage
+    is_ocr_applied = "✅ OCR Applied for Scanned Document" if "OCR" in text_content else "No OCR Applied"
 
-    # Define the execution sequence by setting edges between nodes
-    workflow.set_entry_point("classification_node")  # Start with classification
-    workflow.add_edge("classification_node", "entity_extraction")  # Then extract entities
-    workflow.add_edge("entity_extraction", "summarization")  # Then summarize
-    workflow.add_edge("summarization", END)  # Mark the end of the workflow
-
-    # Compile the workflow into an executable application
-    app = workflow.compile()
-
-    # Initialize the state dictionary with the file content
-    state_input = {"text": text_content}
-
-    # Execute the LangChain workflow
+    # Execute LangChain workflow
     try:
+        state_input = {"text": text_content, "summary_length": summary_length}
+
         result = app.invoke(state_input)
 
         classification = result.get("classification", "⚠️ Error: Classification failed")
@@ -283,59 +299,52 @@ def process_uploaded_file(file):
 
         logging.info(f"Results - Classification: {classification}, Entities: {entities}, Summary: {summary}")
 
-        return classification, entities, summary, "✅ Processing complete!"
+        return classification, entities, summary, is_ocr_applied, "✅ Processing complete!"
 
     except Exception as e:
         logging.error(f"Error during processing: {str(e)}")
-        return "⚠️ Error: Processing failed.", "", "", f"❌ {str(e)}"
+        return "⚠️ Error: Processing failed.", "", "", "❌ No OCR Applied.", f"❌ {str(e)}"
 
 
 # Create the Gradio UI
 with gr.Blocks(theme="default") as demo:
     gr.Markdown(
         """
-        # 📄 Oil & Gas Document Analyzer  
-        Upload a **.txt file** (Max: **5MB**) and get:
+        # 📄 AI-Powered Document Analyzer  
+        Upload a **.txt, .pdf, or .docx** file and get:
         - 📌 **Document Classification**  
         - 🔍 **Key Entity Extraction**  
         - ✍️ **Summarization**  
+        - 🖼️ **LLM-Based OCR for Scanned PDFs & DOCX Files**  
 
-        ⚡ Powered by **LangChain + OpenAI GPT**
-        """,
-        elem_id="header"
+        **ℹ️ Note:** If your document is a **scanned PDF or image-based DOCX**, our system will **automatically apply LLM-based OCR** to extract text.  
+        ⚡ Powered by **LangChain + LangGraph + OpenAI**
+        """
+    )
+
+    summary_length_choice = gr.Radio(
+        choices=["Short", "Detailed"],
+        label="✍️ Summary Length",
+        value="Short"
     )
 
     with gr.Row():
-        with gr.Column(scale=1):
-            file_input = gr.File(label="📂 Upload your .txt file", file_types=[".txt"])
-
-        with gr.Column(scale=2):
-            status_output = gr.Textbox(label="📢 Status", interactive=False, lines=1)
-
-    with gr.Row():
-        with gr.Column(scale=1):
-            with gr.Group():
-                gr.Markdown("### 📌 Document Classification")
-                output_classification = gr.Textbox(label="", interactive=False)
-
-        with gr.Column(scale=1):
-            with gr.Group():
-                gr.Markdown("### 🔍 Extracted Entities")
-                output_entities = gr.Textbox(label="", interactive=False, lines=5)
-
-        with gr.Column(scale=1):
-            with gr.Group():
-                gr.Markdown("### ✍️ Summary")
-                output_summary = gr.Textbox(label="", interactive=False, lines=3)
+        file_input = gr.File(label="📂 Upload your .txt, .pdf, or .docx file", file_types=[".txt", ".pdf", ".docx"])
+        max_pages_input = gr.Slider(5, 50, value=15, step=5, label="📄 Max Pages to Read")
+        max_file_size_input = gr.Slider(1, 50, value=5, step=1, label="📁 Max File Size (MB)")
+        status_output = gr.Textbox(label="📢 Status", interactive=False, lines=1)
+        ocr_status_output = gr.Textbox(label="🖼️ OCR Status", interactive=False, lines=1)
 
     with gr.Row():
-        process_button = gr.Button("🚀 Process File")
+        output_classification = gr.Textbox(label="📌 Classification", interactive=False)
+        output_entities = gr.Textbox(label="🔍 Extracted Entities", interactive=False, lines=5)
+        output_summary = gr.Textbox(label="✍️ Summary", interactive=False, lines=3)
 
-    # Run the processing function on button click
+    process_button = gr.Button("🚀 Process File")
     process_button.click(
         process_uploaded_file,
-        inputs=file_input,
-        outputs=[output_classification, output_entities, output_summary, status_output]
+        inputs=[file_input, max_pages_input, max_file_size_input, summary_length_choice],
+        outputs=[output_classification, output_entities, output_summary, ocr_status_output, status_output]
     )
 
     gr.Markdown(
