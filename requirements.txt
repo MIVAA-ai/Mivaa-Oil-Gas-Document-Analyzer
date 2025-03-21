@@ -1,0 +1,11 @@
+pdfplumber
+pymupdf  # (fitz for PDF handling)
+python-docx  # (Document for DOCX handling)
+pdf2image
+docx2pdf
+pillow  # (PIL for image processing)
+langchain-openai
+langchain
+python-dotenv
+tiktoken
+gradio
