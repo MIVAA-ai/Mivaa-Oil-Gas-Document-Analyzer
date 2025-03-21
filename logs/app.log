@@ -735,3 +735,7 @@ Pressure: 5548 psig, 1500 psi, 500 psi, 27600 KPa, 37900 KPa, 38300 KPa, 35030 K
 Reservoir Parameter: Oil permeability, Skin factor, Productivity index, Flow capacity, Reservoir pressure
 Fluid Type: salt water, oil
 Gas to Oil Ratio: 670 scf/STB, 120 m3/m3 (735 scf/STB), Summary: The text provides detailed data on testing materials and quantities used in various casing intervals, along with results from two production tests indicating flow rates, reservoir pressures, and potential production capacities for a well.
+2025-03-21 14:38:56,281 - INFO - Starting Gradio UI...
+2025-03-21 14:38:56,806 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-03-21 14:38:56,840 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-03-21 14:38:58,054 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
